@@ -5,3 +5,18 @@ function calculate(){
 }
 
 calculate();
+
+//fonction avec parametres
+function fncWithArg(firstname, name){
+    console.log("Prénom: " + firstname);
+    console.log("Nom: "+ name);
+}
+
+fncWithArg("Demba", "Diop");
+
+//fonction avec return 
+function fncWithReturn(){
+    return "fncWithReturn";
+}
+
+console.log(fncWithReturn());
