@@ -1,3 +1,4 @@
+"use strict";
 var v1 = 1, v2 = 3;
 
 function calculate(){
@@ -26,7 +27,7 @@ console.log(fncWithReturn());
     console.log("Hallo fonction anonyme sans l'enrégistrer dans une variable");
 })();
 
-sayHallo = function(){
+var sayHallo = function(){
     console.log("Hallo fonction anonyme en l'enrégistrant dans une variable");
 };
 
