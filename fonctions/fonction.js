@@ -1,5 +1,5 @@
 "use strict";
-var v1 = 1, v2 = 3;
+let v1 = 1, v2 = 3;
 
 function calculate(){
     console.log(v1 + v2);
@@ -27,17 +27,17 @@ console.log(fncWithReturn());
     console.log("Hallo fonction anonyme sans l'enrégistrer dans une variable");
 })();
 
-var sayHallo = function(){
+const sayHallo = function(){
     console.log("Hallo fonction anonyme en l'enrégistrant dans une variable");
 };
 
 sayHallo();
 
-var test = 'noir'; // On crée une variable « test » contenant le mot « noir »
+let test = 'noir'; // On crée une variable « test » contenant le mot « noir »
 
 (function() { // Début de la zone isolée
 
-    var test = 'blanc'; // On crée une variable du même nom avec le contenu « blanc » dans la zone isolée
+    let test = 'blanc'; // On crée une variable du même nom avec le contenu « blanc » dans la zone isolée
   
     console.log('Dans la zone isolée, la couleur est : ' + test);
 
@@ -45,7 +45,7 @@ var test = 'noir'; // On crée une variable « test » contenant le mot « noir 
 
 console.log('Dans la zone non-isolée, la couleur est : ' + test); // Le texte final contient bien le mot « noir » vu que la « zone isolée » n'a aucune influence sur le reste du code
 
-var f = (fncX)=>{
+const f = (fncX)=>{
     console.log(fncX);
 }
 f("fncX");
