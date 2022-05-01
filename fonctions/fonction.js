@@ -1,4 +1,5 @@
 "use strict";
+
 let v1 = 1, v2 = 3;
 
 function calculate(){
@@ -49,6 +50,3 @@ const f = (fncX)=>{
     console.log(fncX);
 }
 f("fncX");
-
-
-
