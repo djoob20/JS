@@ -16,3 +16,16 @@ let bookNumberOfPages = myBook[propertyToAccess];
 
 console.log("############## Détails du llivre ############### ");
 console.log("auteur: " + bookAuthor + "\n" + "titre: " + bookTitle + "\n" + "nombre de pages: " + bookNumberOfPages);
+
+//Class
+
+class Book{
+    constructor(title, author, pages){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+}
+
+let book = new Book("L'Histoire de Tao", "Will Alexander", 250);
+console.log(book.author);
