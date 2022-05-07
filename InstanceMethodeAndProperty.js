@@ -3,6 +3,9 @@ class BankAccount{
         this.owner = owner;
         this.balance = balance;
     }
+    static sayWelcome(){
+        console.log("Welcome to our bank");
+    }
 
     showBalance(){
         console.log("Solde: " + this.balance + " EUR");
@@ -25,6 +28,7 @@ class BankAccount{
     }
 }
 
+BankAccount.sayWelcome();
 const newAccount = new BankAccount("Will Alexander", 500);
 newAccount.showBalance(); // imprime "Solde: 500 EUR" à la console
 newAccount.deposit(500);
