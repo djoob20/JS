@@ -26,3 +26,8 @@ console.log("After unshift: " + guests);
 //supprimer le dernier élément du tableau
 guests.pop();
 console.log("After pop: "+ guests);
+
+//parcourir les éléments d'un tableau
+for(let i of guests){
+    console.log(i);
+}
