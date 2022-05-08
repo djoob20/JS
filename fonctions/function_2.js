@@ -43,7 +43,7 @@ const claraComponent = {
 };
 */
 
-createComponent =(component)=>{
+const createComponent = (component) => {
     const tempComponent = {
         titleText: component.title,
         seasonsText: component.numberOfSeasons + ' seasons',
