@@ -26,3 +26,5 @@ const previous = main.previousElementSibling;
 alert(previous.innerHTML);
 const parent = main.parentElement;
 alert(parent.innerHTML);
+const next = main.nextElementSibling
+alert(next.innerHTML);
