@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modifier le dom</title>
+    <style>
+        p.center {
+            text-align: center;
+        }
+        
+        p.rouge {
+            color: red;
+        }
+        
+        p.bleu {
+            color: blue;
+        }
+        
+        p.large {
+            font-size: 300%;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Modifiez le contenu d'un élément avec <em>innerHTML</em> ou <em>textContent</em> </h1>
-
     <div id="main">
+    </div>
+
+    <h1>Modifiez des classes</h1>
+    <div class="classes">
+        <p class="center rouge">Ce paragraphe sera rouge et centré.</p>
     </div>
 
     <script src="ModifyDom.js"></script>
 
 </body>
+
 </html>
