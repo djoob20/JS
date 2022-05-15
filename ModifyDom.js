@@ -13,3 +13,9 @@ center[0].classList.add('large');
 center[0].classList.replace('rouge', 'bleu');
 alert(center[0].classList.contains('rouge'));
 center[0].classList.remove('center');
+
+//changer les styles d'un élément
+const stl = document.getElementById('stl');
+stl.style.color = "#fff";
+stl.style.backgroundColor = "#000";
+stl.style.fontWeight = "bold";
