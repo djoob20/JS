@@ -23,4 +23,17 @@ stl.style.fontWeight = "bold";
 //Modifiez les attributs
 const attr = document.querySelector('#attr a');
 attr.setAttribute('href', 'https://www.w3schools.com/js/js_htmldom_css.asp');
-alert(attr.getAttribute('href'));
+// alert(attr.getAttribute('href'));
+
+//creer et ajouter de nouveaux éléments
+const newElement = document.createElement('div');
+const parg = document.createElement('p');
+const text1 = document.createTextNode("paragraphe 1");
+const text2 = document.createTextNode("paragraphe 2");
+
+parg.appendChild(text1);
+newElement.appendChild(parg);
+
+const parent = document.getElementById('parent');
+parg.replaceChild(text2, text1);
+parent.appendChild(newElement);
