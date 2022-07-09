@@ -7,26 +7,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>les evênements</title>
     <style>
+        .wrapper {
+            margin-bottom: 1em;
+        }
+        
         h1 {
             text-align: center;
         }
         
         #eventClick {
-            width: 100px;
-            height: 100px;
-            background-color: darkgray;
+            margin: auto;
+            width: 80px;
+            height: 80px;
+            background-color: rgb(146, 138, 138);
             text-align: center;
+        }
+        
+        #divMyPics,
+        #slidecontainer {
+            text-align: center;
+        }
+        
+        #myPicsResult {
+            width: 35%;
+            background-color: chartreuse;
+            float: left;
+        }
+        
+        #MyPics {
+            width: 70%;
+            background-color: chocolate;
+            float: left;
+        }
+        
+        #canvasContainer {
+            overflow: hidden;
+            width: 100%;
+            background-color: cyan;
+        }
+        
+        canvas {
+            border: 1px solid black;
+            width: 560px;
+            height: 360px;
+            background-image: url("blackboard_background.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*cursor: url("writing_hand_gesture_icon.png"), default;*/
+        }
+        
+        #colorPicker {
+            width: 100%;
+            margin-bottom: 4em;
         }
     </style>
 </head>
 
 <body>
-    <h1>les evênements</h1>
-    <div id="eventClick">
-        <p><a id="ggle" href="https://www.google.de/?hl=de">google</a></p>
-        <p id="result"></p>
+    <div class="wrapper">
+        <h1>les evênements</h1>
+        <div id="eventClick">
+            <p><a id="ggle" href="https://www.google.de/?hl=de">google</a></p>
+            <p id="result"></p>
+        </div>
+
+        <h1>Dessiner grâce aux évènements de souris</h1>
+        <div id="slidecontainer">
+            <p>Font Size:</p>
+            <input id="fontSize" type="range" min="1" max="100" value="1">
+        </div>
+        <div id="divMyPics">
+            <div id="colorPicker">
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#000000">
+            </div>
+            <div id="canvasContainer">
+                <canvas id="myPics" width="560" height="360"></canvas>
+                <p id="myPicsResult"></p>
+            </div>
+        </div>
+
+        <div id="selections">
+            <h1>Selections</h1>
+            <label> Choisir un ice cream
+                <select id="ice-cream" name="ice-cream">
+                    <option value="">Select One...</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="vanille">Vanille</option>
+                </select>
+            </label>
+            <p id="selection-result"></p>
+        </div>
+        <div id="inputs">
+            <h1>Inputs</h1>
+            <form action="">
+                <label for="fname"> prenom:</label>
+                <input type="text" name="fname" id="fname" />
+            </form>
+
+            <p id="input-result">resultat</p>
+        </div>
+
+        <script src="Events.js"></script>
     </div>
-    <script src="Events.js"></script>
+
 </body>
 
 </html>
